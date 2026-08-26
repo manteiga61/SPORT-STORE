@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORT STORE</title>
+    <style>
+        body{
+            background-image: url(fundo.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .login-card {
+            width: 350px;
+            padding: 50px;
+            background-color: rgba(238, 236, 236, 0.616);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(3, 3, 3, 0.925);
+            text-align: center;
+        }
+        
+        input {
+            background: transparent;
+            padding: 16px;
+            border: 1px solid #ebebeb;
+            border-radius: 8px;
+            font-size: 15px;
+            width: 80%;
+        }
+
+        
+        input::placeholder{
+            color: rgb(7, 7, 7);
+        }
+        label{
+            color: white;
+        }
+
+        button {
+
+            margin-top: 25px;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background-color: #000000a2;
+            color: rgba(255, 255, 255, 0.37);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+
+            background-color: #010102;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="login-card">
+    <h1>SPORTS STORE</h1>
+    <h2>CADASTRO</h2>
+    <h3> BEM-VINDOS AO MEU PROJETO</h3>
+    <h6>PREENCHA OS CAMPO DE DADOS PARA CADASTRAR</h6>
+
+    <form class="login-form">
+    <label for="username"> </label>
+    <input type="text" id="nome" placeholder="Usuário" required>
+
+    <label for="email"></label>
+    <input type="email" id="email" placeholder="E-mail" required>
+
+    <label for="password"></label>
+    <input type="password" id="senha" placeholder="Senha" required>
+
+</form>
+  <button
+    type="button"
+    onclick="entrar()">
+    Entrar
+</button>
+</div>
+
+<script>
+function entrar() {
+
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+
+    // Verifica se os campos estão preenchidos
+    if (email === "" || senha === "") {
+        alert("Por favor, preencha o e-mail e a senha.");
+        return;
+    }
+
+    // Se estiverem preenchidos, entra no site
+    window.location.href =
+        "https://sites.google.com/view/wordshop2026/in%C3%ADcio";
+}
+</script>
+
+</script>
+</body>
+</html>
